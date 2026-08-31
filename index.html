@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Gubbala Abhinay - Customer Support, Operations Support and Data Management Professional"
+    >
+
+    <meta name="author" content="Gubbala Abhinay">
+    <meta name="theme-color" content="#06101d">
+
+    <title>Gubbala Abhinay | Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #06101d;
+            color: #f5f8fc;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            --bg: #06101d;
+            --card: #0d1b2d;
+            --card2: #12243a;
+            --text: #f5f8fc;
+            --muted: #9eacbd;
+            --border: rgba(255, 255, 255, 0.10);
+            --blue: #4da3ff;
+            --light-blue: #8ecbff;
+            --green: #25d366;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            height: 75px;
+            padding: 0 7%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(6, 16, 29, 0.92);
+
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 1.7rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+        }
+
+        .logo span {
+            color: var(--blue);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: var(--muted);
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .nav-button {
+            padding: 10px 17px;
+
+            background: white;
+            color: #06101d;
+
+            border-radius: 8px;
+
+            font-size: 0.8rem;
+            font-weight: 700;
+
+            transition: 0.3s ease;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 8px 25px rgba(255, 255, 255, 0.15);
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: calc(100vh - 75px);
+
+            padding: 90px 8%;
+
+            display: flex;
+            align-items: center;
+
+            max-width: 1400px;
+            margin: auto;
+
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 950px;
+        }
+
+        .eyebrow {
+            color: var(--blue);
+
+            font-size: 0.72rem;
+            font-weight: 800;
+
+            letter-spacing: 0.18em;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 6.5rem);
+
+            line-height: 1.02;
+
+            letter-spacing: -0.06em;
+
+            margin: 18px 0;
+        }
+
+        .hero h1 span {
+            display: block;
+
+            color: var(--light-blue);
+        }
+
+        .hero h2 {
+            font-size: 1.2rem;
+
+            color: #dce7f2;
+
+            margin-bottom: 22px;
+        }
+
+        .hero h2 b {
+            color: #51677d;
+
+            margin: 0 7px;
+        }
+
+        .hero-description {
+            max-width: 760px;
+
+            color: var(--muted);
+
+            font-size: 0.98rem;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================= */
+
+        .hero-buttons {
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+
+            padding: 13px 20px;
+
+            border-radius: 10px;
+
+            font-size: 0.84rem;
+            font-weight: 700;
+
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+
+        .primary {
+            background: white;
+
+            color: #06101d;
+        }
+
+        .primary:hover {
+            box-shadow:
+                0 10px 30px rgba(255, 255, 255, 0.12);
+        }
+
+        .whatsapp {
+            background: var(--green);
+
+            color: #06101d;
+        }
+
+        .whatsapp:hover {
+            box-shadow:
+                0 10px 30px rgba(37, 211, 102, 0.20);
+        }
+
+        .outline {
+            border: 1px solid var(--border);
+
+            color: white;
+        }
+
+        .outline:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+
+        /* =========================
+           QUICK STATS
+        ========================= */
+
+        .quick-stats {
+            display: flex;
+
+            gap: 35px;
+
+            margin-top: 45px;
+
+            flex-wrap: wrap;
+        }
+
+        .stat strong {
+            display: block;
+
+            font-size: 0.85rem;
+        }
+
+        .stat small {
+            color: var(--muted);
+
+            font-size: 0.7rem;
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        .section {
+            padding: 105px 8%;
+
+            border-top: 1px solid var(--border);
+
+            max-width: 1400px;
+
+            margin: auto;
+        }
+
+        .section-label {
+            color: var(--blue);
+
+            font-size: 0.72rem;
+
+            font-weight: 800;
+
+            letter-spacing: 0.18em;
+        }
+
+        .section-title {
+            font-size: clamp(2.2rem, 4vw, 4rem);
+
+            line-height: 1.1;
+
+            letter-spacing: -0.05em;
+
+            margin: 15px 0 45px;
+        }
+
+        .section-title span {
+            color: var(--light-blue);
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+        }
+
+        .about-heading {
+            font-size: clamp(2rem, 4vw, 4rem);
+
+            line-height: 1.1;
+
+            letter-spacing: -0.05em;
+        }
+
+        .about-heading span {
+            color: var(--light-blue);
+        }
+
+        .about-text p {
+            color: var(--muted);
+
+            margin-bottom: 18px;
+        }
+
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 16px;
+        }
+
+        .skill-card {
+            padding: 25px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            transition: 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-6px);
+
+            border-color:
+                rgba(142, 203, 255, 0.4);
+
+            background: var(--card2);
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, 0.20);
+        }
+
+        .skill-icon {
+            width: 45px;
+            height: 45px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 12px;
+
+            background:
+                rgba(77, 163, 255, 0.12);
+
+            color: var(--light-blue);
+
+            font-size: 0.72rem;
+
+            font-weight: 800;
+
+            margin-bottom: 22px;
+        }
+
+        .skill-card h3 {
+            font-size: 1rem;
+
+            margin-bottom: 9px;
+        }
+
+        .skill-card p {
+            color: var(--muted);
+
+            font-size: 0.8rem;
+        }
+
+        .skill-tag {
+            display: inline-block;
+
+            margin-top: 18px;
+
+            padding: 5px 9px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 50px;
+
+            color: #cbd7e5;
+
+            font-size: 0.65rem;
+        }
+
+
+        /* =========================
+           EXPERIENCE
+        ========================= */
+
+        .timeline {
+            max-width: 900px;
+
+            border-left: 1px solid var(--border);
+
+            margin-left: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+
+            padding: 0 0 50px 40px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+
+            left: -5px;
+            top: 5px;
+
+            width: 9px;
+            height: 9px;
+
+            background: var(--blue);
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 0 7px var(--bg);
+        }
+
+        .timeline-date {
+            color: var(--blue);
+
+            font-size: 0.7rem;
+
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.6rem;
+
+            margin: 8px 0 5px;
+        }
+
+        .company-name {
+            color: var(--light-blue);
+
+            font-size: 1rem;
+
+            font-weight: 700;
+        }
+
+        .job-title {
+            color: #c4d1df;
+
+            font-size: 0.85rem;
+
+            margin: 3px 0 18px;
+        }
+
+        .timeline-item p,
+        .timeline-item li {
+            color: var(--muted);
+        }
+
+        .timeline-item ul {
+            margin-top: 12px;
+
+            padding-left: 20px;
+        }
+
+        .timeline-item li {
+            margin-bottom: 9px;
+        }
+
+
+        /* =========================
+           EDUCATION
+        ========================= */
+
+        .education-card {
+            max-width: 850px;
+
+            padding: 30px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 20px;
+
+            transition: 0.3s ease;
+        }
+
+        .education-card:hover {
+            background: var(--card2);
+        }
+
+        .education-card h3 {
+            font-size: 1.5rem;
+
+            margin-bottom: 7px;
+        }
+
+        .education-course {
+            color: var(--light-blue);
+
+            font-weight: 600;
+
+            margin-bottom: 15px;
+        }
+
+        .education-card p {
+            color: var(--muted);
+
+            margin-bottom: 10px;
+        }
+
+        .course-tags {
+            display: flex;
+
+            gap: 8px;
+
+            flex-wrap: wrap;
+
+            margin-top: 20px;
+        }
+
+        .course-tags span {
+            padding: 6px 10px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 50px;
+
+            color: #cbd7e5;
+
+            font-size: 0.67rem;
+        }
+
+
+        /* =========================
+           TRAINING
+        ========================= */
+
+        .training-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 18px;
+        }
+
+        .training-card {
+            padding: 30px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            transition: 0.3s ease;
+        }
+
+        .training-card:hover {
+            transform: translateY(-5px);
+
+            background: var(--card2);
+
+            border-color:
+                rgba(142, 203, 255, 0.35);
+        }
+
+        .training-number {
+            color: var(--blue);
+
+            font-size: 0.75rem;
+
+            font-weight: 800;
+
+            margin-bottom: 35px;
+        }
+
+        .training-card h3 {
+            font-size: 1.3rem;
+
+            margin-bottom: 10px;
+        }
+
+        .training-card p {
+            color: var(--muted);
+
+            font-size: 0.85rem;
+        }
+
+
+        /* =========================
+           LANGUAGES
+        ========================= */
+
+        .languages {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+        .language-card {
+            padding: 25px;
+
+            text-align: center;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 16px;
+
+            transition: 0.3s ease;
+        }
+
+        .language-card:hover {
+            transform: translateY(-5px);
+
+            background: var(--card2);
+        }
+
+        .language-card h3 {
+            margin-bottom: 5px;
+        }
+
+        .language-card p {
+            color: var(--muted);
+
+            font-size: 0.75rem;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-section {
+            text-align: center;
+
+            padding: 130px 8%;
+
+            border-top: 1px solid var(--border);
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #09182b,
+                    #06101d
+                );
+        }
+
+        .contact-section h2 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+
+            line-height: 1.05;
+
+            letter-spacing: -0.06em;
+
+            margin: 15px 0;
+        }
+
+        .contact-section h2 span {
+            color: var(--light-blue);
+        }
+
+        .contact-description {
+            max-width: 650px;
+
+            margin: auto;
+
+            color: var(--muted);
+        }
+
+        .contact-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+            margin-top: 35px;
+        }
+
+        .social-button {
+            display: inline-block;
+
+            padding: 13px 20px;
+
+            border-radius: 10px;
+
+            font-size: 0.83rem;
+
+            font-weight: 700;
+
+            transition: 0.3s ease;
+        }
+
+        .social-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .email {
+            background: white;
+
+            color: #06101d;
+        }
+
+        .email:hover {
+            box-shadow:
+                0 10px 30px rgba(255, 255, 255, 0.12);
+        }
+
+        .whatsapp-button {
+            background: #25d366;
+
+            color: #06101d;
+        }
+
+        .whatsapp-button:hover {
+            box-shadow:
+                0 10px 30px rgba(37, 211, 102, 0.20);
+        }
+
+        .instagram {
+            background:
+                linear-gradient(
+                    135deg,
+                    #833ab4,
+                    #e1306c,
+                    #f77737
+                );
+
+            color: white;
+        }
+
+        .phone {
+            border: 1px solid var(--border);
+
+            color: white;
+        }
+
+        .phone:hover {
+            background:
+                rgba(255, 255, 255, 0.06);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 25px 8%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            border-top: 1px solid var(--border);
+
+            color: #718196;
+
+            font-size: 0.7rem;
+        }
+
+
+        /* =========================
+           SCROLL REVEAL
+        ========================= */
+
+        .reveal {
+            opacity: 0;
+
+            transform: translateY(25px);
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 70px;
+
+                padding-bottom: 90px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+            }
+
+            .skills-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding: 0 6%;
+            }
+
+            .nav-button {
+                display: none;
+            }
+
+            .hero {
+                padding:
+                    60px 6% 80px;
+            }
+
+            .section {
+                padding:
+                    80px 6%;
+            }
+
+            .hero h1 {
+                font-size: 3.1rem;
+            }
+
+            .hero h2 {
+                font-size: 1rem;
+
+                line-height: 1.8;
+            }
+
+            .hero h2 b {
+                margin: 0 3px;
+            }
+
+            .hero-description {
+                font-size: 0.9rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+
+                align-items: stretch;
+            }
+
+            .button {
+                text-align: center;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .training-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .languages {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-stats {
+                gap: 20px;
+            }
+
+            .quick-stats .stat {
+                min-width: 120px;
+            }
+
+            .timeline {
+                margin-left: 5px;
+            }
+
+            .timeline-item {
+                padding-left: 30px;
+            }
+
+            .education-card {
+                padding: 23px;
+            }
+
+            .contact-section {
+                padding:
+                    100px 6%;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+
+                align-items: stretch;
+            }
+
+            .social-button {
+                text-align: center;
+            }
+
+            footer {
+                padding:
+                    22px 6%;
+
+                flex-direction: column;
+
+                gap: 7px;
+
+                text-align: center;
+            }
+        }
+
+
+        /* =========================
+           REDUCED MOTION
+        ========================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration:
+                    0.01ms !important;
+
+                animation-iteration-count:
+                    1 !important;
+
+                transition-duration:
+                    0.01ms !important;
+            }
+
+            .reveal {
+                opacity: 1;
+
+                transform: none;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            GA<span>.</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#experience">
+                Experience
+            </a>
+
+            <a href="#education">
+                Education
+            </a>
+
+            <a href="#training">
+                Training
+            </a>
+
+            <a href="#languages">
+                Languages
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+        <a
+            href="#contact"
+            class="nav-button"
+        >
+            Contact Me
+        </a>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================= -->
+
+        <section
+            class="hero"
+            id="home"
+        >
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hi, I'm
+                    <span>
+                        Gubbala Abhinay
+                    </span>
+                </h1>
+
+                <h2>
+                    Customer Support
+                    <b>·</b>
+                    Operations Support
+                    <b>·</b>
+                    Data Management
+                </h2>
+
+                <p class="hero-description">
+
+                    Motivated and detail-oriented
+                    professional with experience in
+                    customer support, operations support
+                    and data management. Trained in
+                    Microsoft Excel and Power BI, with
+                    strong communication, organizational
+                    and problem-solving skills.
+
+                </p>
+
+
+                <!-- HERO BUTTONS -->
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#about"
+                        class="button primary"
+                    >
+                        About Me ↗
+                    </a>
+
+                    <a
+                        href="https://wa.me/917569051805"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button whatsapp"
+                    >
+                        WhatsApp Me
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="button outline"
+                    >
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <!-- QUICK STATS -->
+
+                <div class="quick-stats">
+
+                    <div class="stat">
+
+                        <strong>
+                            Customer Support
+                        </strong>
+
+                        <small>
+                            Professional Experience
+                        </small>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>
+                            Microsoft Excel
+                        </strong>
+
+                        <small>
+                            Data & Analysis
+                        </small>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>
+                            Power BI
+                        </strong>
+
+                        <small>
+                            Dashboards & Reporting
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================= -->
+
+        <section
+            class="section reveal"
+            id="about"
+        >
+
+            <div class="section-label">
+                01 — ABOUT ME
+            </div>
+
+            <div class="about-grid">
+
+                <div>
+
+                    <h2 class="about-heading">
+
+                        Organized,
+                        <span>
+                            detail-oriented
+                        </span>
+                        and ready to grow.
+
+                    </h2>
+
+                </div>
+
+
+                <div class="about-text">
+
+                    <p>
+                        I am a motivated and
+                        detail-oriented professional
+                        with experience in customer
+                        support, operations support
+                        and data management.
+                    </p>
+
+                    <p>
+                        I have experience handling
+                        customer queries through calls
+                        and messages, coordinating with
+                        internal teams and maintaining
+                        accurate customer and order
+                        information.
+                    </p>
+
+                    <p>
+                        I am trained in Microsoft Excel,
+                        including data entry, formulas,
+                        sorting, filtering and basic
+                        data analysis.
+                    </p>
+
+                    <p>
+                        I also have training in Power BI,
+                        including dashboards, data
+                        visualization and basic reporting.
+                    </p>
+
+                    <p>
+                        I am a quick learner with strong
+                        communication, teamwork,
+                        problem-solving, time-management
+                        and organizational skills.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================= -->
+
+        <section
+            class="section reveal"
+            id="skills"
+        >
+
+            <div class="section-label">
+                02 — SKILLS
+            </div>
+
+            <h2 class="section-title">
+
+                Skills that help me
+                <span>
+                    deliver.
+                </span>
+
+            </h2>
+
+
+            <div class="skills-grid">
+
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+                        EX
+                    </div>
+
+                    <h3>
+                        Microsoft Excel
+                    </h3>
+
+                    <p>
+                        Data entry, formulas,
+                        sorting, filtering and
+                        basic analysis.
+                    </p>
+
+                    <span class="skill-tag">
+                        Basic
+                    </span>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+                        DM
+                    </div>
+
+                    <h3>
+                        Data Management
+                    </h3>
+
+                    <p>
+                        Maintaining accurate
+                        records, organizing
+                        information and data entry.
+                    </p>
+
+                    <span class="skill-tag">
+                        Operations
+                    </span>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+                        BI
+                    </div>
+
+                    <h3>
+                        Power BI
+                    </h3>
+
+                    <p>
+                        Basic dashboards, data
+                        visualization and reporting.
+                    </p>
+
+                    <span class="skill-tag">
+                        Training
+                    </span>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+                        WD
+                    </div>
+
+                    <h3>
+                        MS Word
+                    </h3>
+
+                    <p>
+                        Document preparation,
+                        formatting and
+                        administrative work.
+                    </p>
+
+                    <span class="skill-tag">
+                        Office
+                    </span>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+                        CS
+                    </div>
+
+                    <h3>
+                        Customer Support
+                    </h3>
+
+                    <p>
+                        Handling customer queries
+                        through calls and messages.
+                    </p>
+
+                    <span class="skill-tag">
+                        Support
+                    </span>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+                        TC
+                    </div>
+
+                    <h3>
+                        Teamwork & Coordination
+                    </h3>
+
+                    <p>
+                        Coordinating with internal
+                        teams to resolve issues.
+                    </p>
+
+                    <span class="skill-tag">
+                        Teamwork
+                    </span>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+                        PS
+                    </div>
+
+                    <h3>
+                        Problem Solving
+                    </h3>
+
+                    <p>
+                        Finding practical solutions
+                        and handling work-related
+                        challenges.
+                    </p>
+
+                    <span class="skill-tag">
+                        Strength
+                    </span>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+                        TM
+                    </div>
+
+                    <h3>
+                        Time Management
+                    </h3>
+
+                    <p>
+                        Managing tasks efficiently
+                        and supporting timely
+                        responses.
+                    </p>
+
+                    <span class="skill-tag">
+                        Professional
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EXPERIENCE
+        ========================= -->
+
+        <section
+            class="section reveal"
+            id="experience"
+        >
+
+            <div class="section-label">
+                03 — EXPERIENCE
+            </div>
+
+            <h2 class="section-title">
+
+                My professional
+                <span>
+                    experience.
+                </span>
+
+            </h2>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-date">
+                        AUGUST 2025 — PRESENT
+                    </div>
+
+                    <h3>
+                        Customer Support
+                    </h3>
+
+                    <div class="company-name">
+                        CONTAINE TECHNOLOGIES LIMITED
+                    </div>
+
+                    <div class="job-title">
+                        Customer Support / Operations
+                    </div>
+
+                    <p>
+                        Key responsibilities:
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Handled customer queries
+                            via calls and messages.
+                        </li>
+
+                        <li>
+                            Coordinated with internal
+                            teams to resolve issues.
+                        </li>
+
+                        <li>
+                            Maintained accurate
+                            customer and order data.
+                        </li>
+
+                        <li>
+                            Ensured timely response
+                            and customer satisfaction.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EDUCATION
+        ========================= -->
+
+        <section
+            class="section reveal"
+            id="education"
+        >
+
+            <div class="section-label">
+                04 — EDUCATION
+            </div>
+
+            <h2 class="section-title">
+
+                Academic
+                <span>
+                    background.
+                </span>
+
+            </h2>
+
+
+            <div class="education-card">
+
+                <h3>
+                    ZPHS Saroonagar
+                </h3>
+
+                <div class="education-course">
+
+                    Intermediate
+                    (CEC — Commerce,
+                    Economics & Civics)
+
+                </div>
+
+                <p>
+                    <strong>
+                        Completed:
+                    </strong>
+                    April / May 2024
+                </p>
+
+                <p>
+                    Relevant coursework included
+                    fundamentals of Microsoft Excel,
+                    basic data analysis, introduction
+                    to Power BI and fundamentals of
+                    Commerce, Economics & Civics.
+                </p>
+
+
+                <div class="course-tags">
+
+                    <span>
+                        Commerce
+                    </span>
+
+                    <span>
+                        Economics
+                    </span>
+
+                    <span>
+                        Civics
+                    </span>
+
+                    <span>
+                        Microsoft Excel
+                    </span>
+
+                    <span>
+                        Data Analysis
+                    </span>
+
+                    <span>
+                        Power BI
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TRAINING
+        ========================= -->
+
+        <section
+            class="section reveal"
+            id="training"
+        >
+
+            <div class="section-label">
+                05 — TRAINING
+            </div>
+
+            <h2 class="section-title">
+
+                Professional
+                <span>
+                    training.
+                </span>
+
+            </h2>
+
+
+            <div class="training-grid">
+
+
+                <article class="training-card">
+
+                    <div class="training-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Microsoft Excel
+                    </h3>
+
+                    <p>
+                        Data entry, formulas,
+                        sorting, filtering and
+                        basic analysis.
+                    </p>
+
+                </article>
+
+
+                <article class="training-card">
+
+                    <div class="training-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Power BI
+                    </h3>
+
+                    <p>
+                        Dashboards, data
+                        visualization and
+                        basic reporting.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LANGUAGES
+        ========================= -->
+
+        <section
+            class="section reveal"
+            id="languages"
+        >
+
+            <div class="section-label">
+                06 — LANGUAGES
+            </div>
+
+            <h2 class="section-title">
+
+                Languages I
+                <span>
+                    speak.
+                </span>
+
+            </h2>
+
+
+            <div class="languages">
+
+
+                <div class="language-card">
+
+                    <h3>
+                        Telugu
+                    </h3>
+
+                    <p>
+                        Language
+                    </p>
+
+                </div>
+
+
+                <div class="language-card">
+
+                    <h3>
+                        English
+                    </h3>
+
+                    <p>
+                        Language
+                    </p>
+
+                </div>
+
+
+                <div class="language-card">
+
+                    <h3>
+                        Hindi
+                    </h3>
+
+                    <p>
+                        Language
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================= -->
+
+        <section
+            class="contact-section reveal"
+            id="contact"
+        >
+
+            <p class="eyebrow">
+                07 — GET IN TOUCH
+            </p>
+
+
+            <h2>
+
+                Let's connect
+                <span>
+                    and grow.
+                </span>
+
+            </h2>
+
+
+            <p class="contact-description">
+
+                I am open to opportunities in
+                customer support, operations,
+                data management, back-office
+                and administrative roles.
+
+            </p>
+
+
+            <div class="contact-buttons">
+
+
+                <!-- EMAIL -->
+
+                <a
+                    href="mailto:gubbalaabhinay267@gmail.com"
+                    class="social-button email"
+                >
+                    ✉ Email Me
+                </a>
+
+
+                <!-- WHATSAPP -->
+
+                <a
+                    href="https://wa.me/917569051805"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-button whatsapp-button"
+                >
+                    WhatsApp
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="https://www.instagram.com/gubbala_abhinay/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-button instagram"
+                >
+                    Instagram
+                </a>
+
+
+                <!-- PHONE -->
+
+                <a
+                    href="tel:+917569051805"
+                    class="social-button phone"
+                >
+                    📞 Call Me
+                </a>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <span>
+            © 2026 Gubbala Abhinay
+        </span>
+
+        <span>
+            Hyderabad, Telangana
+        </span>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        const observer =
+            new IntersectionObserver(
+                function (entries) {
+
+                    entries.forEach(
+                        function (entry) {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target
+                                    .classList
+                                    .add("visible");
+
+                                observer.unobserve(
+                                    entry.target
+                                );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        document
+            .querySelectorAll(".reveal")
+            .forEach(
+                function (element) {
+
+                    observer.observe(element);
+
+                }
+            );
+
+    </script>
+
+</body>
+
+</html>
