@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gubbala Abhinay | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+    color:#172033;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 7%;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#2563eb;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#334155;
+    font-size:13px;
+    font-weight:600;
+}
+
+nav ul li a:hover{
+    color:#2563eb;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    padding:130px 7% 80px;
+    background:#0f172a;
+    color:white;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:1100px;
+    margin:auto;
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 350px;
+    gap:80px;
+    align-items:center;
+}
+
+.small-title{
+    color:#60a5fa;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:64px;
+    line-height:1.05;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#3b82f6;
+}
+
+.hero h2{
+    font-size:22px;
+    font-weight:400;
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.hero-description{
+    max-width:650px;
+    color:#94a3b8;
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.location{
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 24px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.primary:hover{
+    background:#1d4ed8;
+}
+
+.secondary{
+    border:1px solid #475569;
+    color:white;
+}
+
+.secondary:hover{
+    border-color:#60a5fa;
+    color:#60a5fa;
+}
+
+/* PROFILE */
+
+.profile{
+    display:flex;
+    justify-content:center;
+}
+
+.profile-circle{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    background:linear-gradient(145deg,#2563eb,#1e40af);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:80px;
+    font-weight:800;
+    border:10px solid rgba(255,255,255,.08);
+    box-shadow:0 0 0 15px rgba(37,99,235,.1);
+}
+
+/* ================= MAIN ================= */
+
+.container{
+    max-width:1050px;
+    margin:auto;
+    padding:90px 25px;
+}
+
+.section-heading{
+    margin-bottom:45px;
+}
+
+.section-heading span{
+    color:#2563eb;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    font-size:38px;
+    margin-top:7px;
+}
+
+.section-heading p{
+    color:#64748b;
+    margin-top:10px;
+    max-width:700px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:white;
+}
+
+.about-box{
+    background:#f8fafc;
+    border-radius:12px;
+    padding:35px;
+    border-left:5px solid #2563eb;
+}
+
+.about-box p{
+    color:#64748b;
+    font-size:16px;
+    line-height:1.9;
+}
+
+/* ================= EXPERIENCE ================= */
+
+.experience{
+    background:#f5f7fb;
+}
+
+.experience-card{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 25px rgba(15,23,42,.06);
+    position:relative;
+}
+
+.experience-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:5px;
+    background:#2563eb;
+    border-radius:12px 0 0 12px;
+}
+
+.experience-card h3{
+    font-size:22px;
+    margin-bottom:7px;
+}
+
+.job-title{
+    color:#2563eb;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.date{
+    color:#94a3b8;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.experience-card ul{
+    padding-left:20px;
+    color:#64748b;
+}
+
+.experience-card li{
+    margin-bottom:10px;
+}
+
+/* ================= SKILLS ================= */
+
+.skills{
+    background:white;
+}
+
+.skill-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+}
+
+.skill{
+    padding:13px 20px;
+    background:#eff6ff;
+    border:1px solid #dbeafe;
+    color:#1e40af;
+    border-radius:30px;
+    font-weight:600;
+    font-size:14px;
+    transition:.3s;
+}
+
+.skill:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* ================= EDUCATION ================= */
+
+.education{
+    background:#f5f7fb;
+}
+
+.education-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.education-card h3{
+    color:#172033;
+    font-size:21px;
+    margin-bottom:8px;
+}
+
+.education-card strong{
+    color:#2563eb;
+}
+
+.education-card p{
+    color:#64748b;
+    margin-top:8px;
+}
+
+/* ================= TRAINING ================= */
+
+.training{
+    background:white;
+}
+
+.training-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.training-card{
+    padding:30px;
+    border-radius:12px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+}
+
+.training-card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.training-card p{
+    color:#64748b;
+    line-height:1.7;
+}
+
+/* ================= LANGUAGES ================= */
+
+.languages{
+    background:#f5f7fb;
+}
+
+.language-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.language-card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    font-weight:bold;
+    color:#1e3a8a;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#0f172a;
+    color:white;
+}
+
+.contact .section-heading h2{
+    color:white;
+}
+
+.contact .section-heading p{
+    color:#94a3b8;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.contact-card{
+    padding:28px;
+    border:1px solid #334155;
+    border-radius:10px;
+}
+
+.contact-card h3{
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+.contact-card a{
+    color:#cbd5e1;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+.contact-card a:hover{
+    color:white;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#020617;
+    color:#64748b;
+    text-align:center;
+    padding:25px;
+    font-size:13px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    nav{
+        height:auto;
+        padding:15px 20px;
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .hero{
+        padding-top:170px;
+    }
+
+    .hero-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero-description{
+        margin:auto auto 25px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .profile{
+        margin-top:30px;
+    }
+
+    .profile-circle{
+        width:220px;
+        height:220px;
+        font-size:60px;
+    }
+
+    .training-grid,
+    .language-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav>
+
+    <div class="logo">
+        Gubbala <span>Abhinay</span>
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div>
+
+            <div class="small-title">
+                PROFESSIONAL PROFILE
+            </div>
+
+            <h1>
+                Gubbala <span>Abhinay</span>
+            </h1>
+
+            <h2>
+                Operations • Customer Support • Data Management
+            </h2>
+
+            <div class="location">
+                📍 Hyderabad, Telangana
+            </div>
+
+            <p class="hero-description">
+                Motivated and detail-oriented professional with experience
+                in operations support, customer support, data management,
+                and administrative tasks. Trained in Microsoft Excel and
+                Power BI with a strong ability to organize, analyze, and
+                maintain data accurately.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#contact" class="btn primary">
+                    Contact Me
+                </a>
+
+                <a href="#experience" class="btn secondary">
+                    View Experience
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile">
+
+            <div class="profile-circle">
+                GA
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>About Me</span>
+
+            <h2>Professional Summary</h2>
+
+            <p>
+                A motivated professional focused on operations,
+                customer support, data management and administrative work.
+            </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <p>
+                Motivated and detail-oriented professional with experience
+                in operations support, data management, and administrative
+                tasks. Trained in Microsoft Excel and Power BI, with a
+                strong ability to organize, analyze, and maintain data
+                accurately.
+            </p>
+
+            <br>
+
+            <p>
+                A quick learner with excellent problem-solving, teamwork,
+                and organizational skills. Seeking an opportunity to build
+                a successful career in operations, data management,
+                back-office, or administrative roles while contributing
+                to organizational growth.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section class="experience" id="experience">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Career</span>
+
+            <h2>Relevant Experience</h2>
+
+            <p>
+                Professional experience in customer support and
+                information technology.
+            </p>
+
+        </div>
+
+
+        <div class="experience-card">
+
+            <h3>
+                Customer Support / Information Technology Intern
+            </h3>
+
+            <div class="job-title">
+                Information Technology
+            </div>
+
+            <div class="date">
+                August 2025 – Present
+            </div>
+
+            <ul>
+
+                <li>
+                    Handled customer queries through calls and messages.
+                </li>
+
+                <li>
+                    Coordinated with internal teams to resolve issues.
+                </li>
+
+                <li>
+                    Maintained accurate customer and order data.
+                </li>
+
+                <li>
+                    Ensured timely responses and supported customer
+                    satisfaction.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills" id="skills">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Expertise</span>
+
+            <h2>Skills</h2>
+
+            <p>
+                Technical and professional skills.
+            </p>
+
+        </div>
+
+
+        <div class="skill-list">
+
+            <div class="skill">Data Entry & Data Management</div>
+
+            <div class="skill">Microsoft Excel</div>
+
+            <div class="skill">Power BI</div>
+
+            <div class="skill">MS Word</div>
+
+            <div class="skill">Problem Solving</div>
+
+            <div class="skill">Teamwork & Coordination</div>
+
+            <div class="skill">Time Management</div>
+
+            <div class="skill">Adaptability</div>
+
+            <div class="skill">Quick Learning</div>
+
+            <div class="skill">Communication Skills</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="education" id="education">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Academic Background</span>
+
+            <h2>Education</h2>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <h3>
+                ZPHS Saroonagar
+            </h3>
+
+            <strong>
+                Intermediate – CEC
+            </strong>
+
+            <p>
+                Commerce, Economics & Civics
+            </p>
+
+            <p>
+                <strong>Completed:</strong>
+                April / May 2024
+            </p>
+
+            <p>
+                Relevant coursework included Fundamentals of Microsoft
+                Excel, data entry, formulas, sorting, filtering,
+                basic data analysis, introduction to Power BI,
+                Commerce, Economics and Civics.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRAINING ================= -->
+
+<section class="training" id="training">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Professional Development</span>
+
+            <h2>Training</h2>
+
+            <p>
+                Practical training in Excel and Power BI.
+            </p>
+
+        </div>
+
+
+        <div class="training-grid">
+
+            <div class="training-card">
+
+                <h3>
+                    Microsoft Excel
+                </h3>
+
+                <p>
+                    Data entry, formulas, sorting, filtering,
+                    spreadsheet organization and basic data analysis.
+                </p>
+
+            </div>
+
+
+            <div class="training-card">
+
+                <h3>
+                    Power BI
+                </h3>
+
+                <p>
+                    Dashboards, data visualization and
+                    basic reporting.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LANGUAGES ================= -->
+
+<section class="languages">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Communication</span>
+
+            <h2>Languages</h2>
+
+        </div>
+
+
+        <div class="language-grid">
+
+            <div class="language-card">
+                Telugu
+            </div>
+
+            <div class="language-card">
+                English
+            </div>
+
+            <div class="language-card">
+                Hindi
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Get In Touch</span>
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Open to opportunities in operations, customer support,
+                data management, back-office and administrative roles.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <h3>Phone</h3>
+
+                <a href="tel:+917569051805">
+                    +91 75690 51805
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>Email</h3>
+
+                <a href="mailto:gubbalaabhinay267@gmail.com">
+                    gubbalaabhinay267@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>Location</h3>
+
+                <a href="#">
+                    Hyderabad, Telangana
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    © 2026 Gubbala Abhinay. All Rights Reserved.
+
+</footer>
+
+
+</body>
+</html>
